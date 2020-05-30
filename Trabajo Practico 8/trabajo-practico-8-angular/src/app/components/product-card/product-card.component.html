@@ -1,0 +1,18 @@
+<div class="pb-3">
+  <mat-card [routerLink]="['/product-details', instrumento.id]">
+    <div class="row">
+      <div class="col-4 col-md-4 col-lg-2">
+        <img src="assets/images/{{instrumento.imagen}}">
+      </div>
+      <div class="col-8 col-md-8 col-lg-10">
+        <mat-card-content>
+          <h1 class="font-weight-light"> {{ instrumento.instrumento }} </h1>
+          <mat-card-title>{{ instrumento.precio | currency }}</mat-card-title>
+          <app-shipping-cost [cost]="instrumento.costoEnvio"></app-shipping-cost>
+          <br>
+          <span class="text-muted"> {{ instrumento.cantidadVendida }} Vendidos.</span>
+        </mat-card-content>
+      </div>
+    </div>
+  </mat-card>
+</div>

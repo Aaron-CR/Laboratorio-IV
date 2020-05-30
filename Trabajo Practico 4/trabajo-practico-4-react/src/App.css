@@ -1,0 +1,44 @@
+.title {
+  color: black;
+  font-weight: 200 !important;
+}
+
+.title, a:hover {
+  text-decoration: none !important;
+}
+
+.free-shipping {
+  color: green;
+  font-size: 14px;
+}
+
+.shipping-cost {
+  color: orangered;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 24px;
+  color: black;
+}
+
+.sold {
+  font-size: 12px;
+}
+
+.img-details {
+  height: 100%;
+  width: auto;
+  display: flex;
+  margin: 0 auto;
+}
+
+.descripcion {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.price-details {
+  font-size: 38px;
+  font-weight: 200 !important;
+}

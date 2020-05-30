@@ -1,0 +1,16 @@
+{
+  "name": "trabajo-practico-3",
+  "version": "1.0.0",
+  "description": "Trabajo Practico 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aaron Castro",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "mongodb": "^3.5.5",
+    "request-promise": "^4.2.5"
+  }
+}

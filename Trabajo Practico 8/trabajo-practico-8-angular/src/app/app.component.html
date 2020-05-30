@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <mat-icon class="mr-2" aria-hidden="false" aria-label="music icon">music_note</mat-icon>
+    <span class="mr-auto">Hendrix</span>
+    <a mat-flat-button class="text-decoration-none" color="primary" [routerLink]="['/']">Home</a>
+    <a mat-flat-button class="text-decoration-none" color="primary" [routerLink]="['/about']">Donde Estamos</a>
+    <a mat-flat-button class="text-decoration-none" color="primary" [routerLink]="['/product-list']">Products</a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>
