@@ -1,0 +1,30 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+    <li class="breadcrumb-item"><a routerLink="/product-list">Productos</a></li>
+    <li class="breadcrumb-item active" aria-current="page"> {{ instrumento.instrumento }} </li>
+  </ol>
+</nav>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-8">
+      <img [src]="'http://localhost:8080/api/v1/instrumentos/images/' + instrumento.imagen" [alt]="instrumento.instrumento">
+      <br />
+      <small>{{ instrumento.descripcion }}</small>
+    </div>
+    <div class="col">
+      <small class="text-muted">{{ instrumento.cantidadVendida }} vendidos</small>
+      <h3>{{ instrumento.instrumento }}</h3>
+      <h1 class="font-weight-light">{{ instrumento.precio | currency }}</h1>
+      <small class="font-weight-bold">Marca: {{ instrumento.marca }}</small>
+      <br />
+      <small class="font-weight-bold">Modelo: {{ instrumento.modelo }}</small>
+      <br />
+      <br />
+      <small>Costo Envio:</small>
+      <app-shipping-cost [data]="instrumento.costoEnvio"></app-shipping-cost>
+      <br />
+      <button type="button" class="btn btn-outline-primary">Agregar al carrito</button>
+    </div>
+  </div>
+</div>

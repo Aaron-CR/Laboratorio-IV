@@ -1,0 +1,13 @@
+<div>
+  <ng-container *ngIf="data === 'G'; else elseTemplate">
+    <span class="free-shipping">
+      <img src="../assets/images/camion.png" />
+      <small>Envío gratis a todo el País</small>
+    </span>
+  </ng-container>
+  <ng-template #elseTemplate>
+    <span class="shipping-cost">
+      <small>Costo de Envío Interior de Argentina: {{ data | currency }}</small>
+    </span>
+  </ng-template>
+</div>

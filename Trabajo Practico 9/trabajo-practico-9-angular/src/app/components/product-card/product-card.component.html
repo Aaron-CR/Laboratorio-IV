@@ -1,0 +1,16 @@
+<div class="card w-100 mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-2">
+      <img [src]="'http://localhost:8080/api/v1/instrumentos/images/' + data.imagen" [alt]="data.instrumento"
+        class="card-img">
+    </div>
+    <div class="col-md-10">
+      <div class="card-body">
+        <h3 class="card-title font-weight-light"> {{ data.instrumento }} </h3>
+        <h3 class="card-title"> {{ data.precio | currency }} </h3>
+        <app-shipping-cost [data]="data.costoEnvio"></app-shipping-cost>
+        <p class="card-text"><small class="text-muted">{{ data.cantidadVendida }} Vendidos.</small></p>
+      </div>
+    </div>
+  </div>
+</div>
